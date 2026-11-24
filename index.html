@@ -31,20 +31,12 @@
   <img src="icono-512.png" alt="UTEL">
   <h1>Rendición de gastos</h1>
   <p>Cargá tus gastos, comprobantes y anticipos. Entrá con tu cuenta de UTEL o S4Learning.</p>
-  <a class="btn" id="entrar" href="https://script.google.com/a/macros/utel.edu.mx/s/AKfycbxOXe_x4m73Kq8SU0sJUy-QXNpECDA5MciSx1aVMq5qPuI9dHUZE3iKnsGjIa_XfMan/exec">Entrar</a>
-  <div class="tip" id="tip">
-    <b>Tenela a mano en el celu:</b>
-    <ol>
-      <li><b>iPhone (Safari):</b> botón Compartir → “Agregar a inicio”.</li>
-      <li><b>Android (Chrome):</b> menú ⋮ → “Agregar a la pantalla principal” o “Instalar app”.</li>
-    </ol>
-  </div>
+  <a class="btn" id="entrar" href="https://script.google.com/macros/s/AKfycbzEWBqRPaf8LLBEtDO5ROdUbl9X4BgTgHw_yLfqcu02LpIUsGfmoDQob3qfovalOX3f/exec">Entrar</a>
 </div>
 <script>
   var desdeInicio = /[?&]app=1/.test(location.search) || window.navigator.standalone ||
     (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
   if (desdeInicio) {
-    document.getElementById('tip').style.display = 'none';
     location.replace(document.getElementById('entrar').href);
   }
 </script>
